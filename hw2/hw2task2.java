@@ -14,13 +14,6 @@ public class hw2task2 {
         System.out.println(java.util.Arrays.toString(arrToSort));
     }
     public static int[] sort(int[] array) {
-        // i - номер прохода
-        // Logger logger = Logger.getLogger (flogger.class.getName ());	
-        // FileHandler fh = new FileHandler("log.xml");
-        // logger.addHandler(fh);
-
-        // XMLFormatter xml = new XMLFormatter();
-        // fh.setFormatter(xml);
 
         int temp=0;
         for (int i = 0; i < array.length - 1; i++) {
@@ -32,7 +25,6 @@ public class hw2task2 {
                     array[j+1]= temp;
                 }
             }
-            // logger.log (Level.INFO, "Дошёл до этой точки");
             logArray(array);
         }
     return array;
